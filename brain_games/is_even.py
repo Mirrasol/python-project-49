@@ -2,7 +2,6 @@ from random import randint
 
 
 def is_even():
-    print("Answer 'yes' if the number is even, otherwise answer 'no'.")
     for i in range(3):
         num = randint(1, 1000)
         print(f"Question: {num}")

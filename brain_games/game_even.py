@@ -1,11 +1,10 @@
 from brain_games.is_even import is_even
-import prompt
+from brain_games.welcome import welcome
 
 
 def game_even():
-    print("Welcome to the Brain Games!")
-    name = prompt.string("May I have your name? ")
-    print(f"Hello, {name}!")
+    name = welcome()
+    print("Answer 'yes' if the number is even, otherwise answer 'no'.")
     result = is_even()
     if result:
         print(f"Congratulations, {name}!")
