@@ -9,3 +9,6 @@ def game_even():
     else:
         correct_answer = 'no'
     return expression, correct_answer
+
+
+TASK = "Answer 'yes' if the number is even, otherwise answer 'no'."

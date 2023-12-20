@@ -1,10 +1,10 @@
 from brain_games.welcome import welcome
 
 
-def logic(game):
+def logic(task, game):
     """Main functionality of the games."""
     name = welcome()
-    print(game.__doc__)
+    print(task)
     for _ in range(3):
         expression, correct_answer = game()
         print(f"Question: {expression}")

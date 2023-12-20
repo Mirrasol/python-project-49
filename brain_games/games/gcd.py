@@ -15,3 +15,6 @@ def game_gcd():
     expression = f"{num1} {num2}"
     correct_answer = str(gcd(num1, num2))
     return expression, correct_answer
+
+
+TASK = "Find the greatest common divisor of given numbers."

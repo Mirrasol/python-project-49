@@ -13,3 +13,6 @@ def game_progression():
     for i in range(10):
         expression += str(lst[i]) + ' '
     return expression, correct_answer
+
+
+TASK = "What number is missing in the progression?"

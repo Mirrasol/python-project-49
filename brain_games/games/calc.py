@@ -14,3 +14,6 @@ def game_calc():
     else:
         correct_answer = str(num1 * num2)
     return expression, correct_answer
+
+
+TASK = "What is the result of the expression?"

@@ -14,3 +14,6 @@ def game_prime():
                 correct_answer = "no"
                 break
     return expression, correct_answer
+
+
+TASK = "Answer 'yes' if given number is prime. Otherwise answer 'no'."
