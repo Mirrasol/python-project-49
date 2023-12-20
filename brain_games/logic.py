@@ -1,9 +1,11 @@
-from brain_games.welcome import welcome
+import prompt
 
 
 def logic(task, game):
     """Main functionality of the games."""
-    name = welcome()
+    print("Welcome to the Brain Games!")
+    name = prompt.string("May I have your name? ")
+    print(f"Hello, {name}!")
     print(task)
     for _ in range(3):
         expression, correct_answer = game()
