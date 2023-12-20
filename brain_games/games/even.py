@@ -2,7 +2,7 @@ import random
 
 
 def game_even():
-    """Answer 'yes' if the number is even, otherwise answer 'no'."""
+    """Answer "yes" if the number is even, otherwise answer "no"."""
     expression = random.randint(1, 1000)
     if expression % 2 == 0:
         correct_answer = 'yes'
@@ -11,4 +11,4 @@ def game_even():
     return expression, correct_answer
 
 
-TASK = "Answer 'yes' if the number is even, otherwise answer 'no'."
+TASK = 'Answer "yes" if the number is even, otherwise answer "no".'
