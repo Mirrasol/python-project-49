@@ -2,6 +2,7 @@ import random
 
 
 def game_prime():
+    """Answer 'yes' if given number is prime. Otherwise answer 'no'."""
     num = random.randint(1, 200)
     expression = num
     correct_answer = "yes"
@@ -13,6 +14,3 @@ def game_prime():
                 correct_answer = "no"
                 break
     return expression, correct_answer
-
-
-statement = "Answer 'yes' if given number is prime. Otherwise answer 'no'."

@@ -9,11 +9,9 @@ def gcd(a, b):
 
 
 def game_gcd():
+    """Find the greatest common divisor of given numbers."""
     num1 = random.randint(1, 100)
     num2 = random.randint(1, 100)
     expression = f"{num1} {num2}"
     correct_answer = str(gcd(num1, num2))
     return expression, correct_answer
-
-
-statement = "Find the greatest common divisor of given numbers."
