@@ -1,11 +1,10 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = "A collection of math games."
+description = ""
 authors = ["Elena Dobruk <elena.dobruk@yandex.ru>"]
 readme = "README.md"
 repository = "https://github.com/Mirrasol/python-project-49"
-classifiers = ["Topic :: Games/Entertainment"]
 packages = [
   { include = "brain_games" },
 ]
