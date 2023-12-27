@@ -1,15 +1,17 @@
 import prompt
 
+AMOUNT_OF_ROUNDS = 3
 
-def logic(task, game):
+
+def start_game(game):
     """Main functionality of the games."""
     print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name? ")
     print(f"Hello, {name}!")
-    print(task)
-    for _ in range(3):
-        expression, correct_answer = game()
-        print(f"Question: {expression}")
+    print(game.TASK)
+    for _ in range(AMOUNT_OF_ROUNDS):
+        question, correct_answer = game.get_question_and_answer()
+        print(f"Question: {question}")
         user_answer = input("Your answer: ")
         if correct_answer == user_answer:
             print("Correct!")
