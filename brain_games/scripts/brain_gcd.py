@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 
-from brain_games.games.gcd import TASK, game_gcd
-from brain_games.logic import logic
+from brain_games.games import gcd
+from brain_games.logic import start_game
 
 
 def main():
-    logic(TASK, game_gcd)
+    start_game(gcd)
 
 
 if __name__ == '__main__':

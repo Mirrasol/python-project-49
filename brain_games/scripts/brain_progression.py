@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 
-from brain_games.games.progression import TASK, game_progression
-from brain_games.logic import logic
+from brain_games.games import progression
+from brain_games.logic import start_game
 
 
 def main():
-    logic(TASK, game_progression)
+    start_game(progression)
 
 
 if __name__ == '__main__':
