@@ -1,5 +1,9 @@
 import random
 
+TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+MIN_NUMBER = 1
+MAX_NUMBER = 200
+
 
 def is_prime(num):
     if num == 1:
@@ -11,14 +15,11 @@ def is_prime(num):
     return True
 
 
-def game_prime():
+def get_question_and_answer():
     """Answer "yes" if given number is prime. Otherwise answer "no"."""
-    num = random.randint(1, 200)
-    expression = num
+    number = random.randint(MIN_NUMBER, MAX_NUMBER)
+    question = number
     correct_answer = 'no'
-    if is_prime(num):
+    if is_prime(number):
         correct_answer = 'yes'
-    return expression, correct_answer
-
-
-TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    return question, correct_answer
