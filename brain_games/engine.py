@@ -3,7 +3,7 @@ import prompt
 AMOUNT_OF_ROUNDS = 3
 
 
-def start_game(game):
+def play(game):
     """Main functionality of the games."""
     print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name? ")
